@@ -1,0 +1,27 @@
+
+
+@mixin grid2columnas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 150px 1fr 150px;
+    grid-gap: 1em;
+    // Mobile Styles
+    @media only screen and (max-width: 401px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@mixin centrandoParrafo {
+    display: flex;
+    align-content: center;
+}
+
+@mixin animacionDesenfoque {
+    @keyframes enfoque {
+        0%{filter: blur(5px);}
+        100%{filter: blur(0px);}
+    }
+    animation-name: enfoque;
+    animation-duration: 1s;
+}

@@ -1,0 +1,125 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#secNosotros .conteinerNos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: 150px 1fr 150px;
+      grid-template-rows: 150px 1fr 150px;
+  grid-gap: 1em;
+}
+
+@media only screen and (max-width: 401px) {
+  #secNosotros .conteinerNos {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+}
+
+#secNosotros .conteinerNos h1 {
+  color: #db972b;
+  font-size: 3em;
+  -webkit-animation-name: enfoque;
+          animation-name: enfoque;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes enfoque {
+  0% {
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
+}
+
+@keyframes enfoque {
+  0% {
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #secNosotros .conteinerNos h1 {
+    font-size: 1.8em;
+    text-align: center;
+  }
+}
+
+#secNosotros .conteinerNos .conteinerParrafoNos {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#secNosotros .conteinerNos .conteinerParrafoNos p {
+  margin: auto 0px auto 0px;
+  text-align: right;
+  font-size: 1.1em;
+  -webkit-animation-name: enfoque;
+          animation-name: enfoque;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@keyframes enfoque {
+  0% {
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #secNosotros .conteinerNos .conteinerParrafoNos p {
+    font-size: 0.9em;
+    text-align: center;
+  }
+}
+
+#secServicios img {
+  width: 6em;
+}
+
+@media only screen and (max-width: 400px) {
+  #secServicios img {
+    width: 5em;
+  }
+}
+
+#secContracto {
+  background-color: #f2f2db;
+}
+
+.col-6 {
+  text-align: center;
+}
+
+.botonesFormulario {
+  text-align: center;
+}
+
+.clearB {
+  clear: both;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,72 @@
+@import 'tamanos';
+@import 'colores';
+@import 'mixin';
+
+html {
+    scroll-behavior: smooth;
+  }
+
+#secNosotros {
+    .conteinerNos {
+        @include grid2columnas;
+        h1 {
+            color: $colorNaranjaPrincipal;
+            font-size: $size-h2-Nosotros;
+            @include animacionDesenfoque;
+
+            // Mobile Style
+            @media only screen and (max-width: 400px) {
+                font-size: $size-h2-Nosotros-Mobile;
+                text-align: center;
+            }
+        }
+        .conteinerParrafoNos {
+            height: 100%;
+            width: 100%;
+            @include centrandoParrafo;
+
+            p {
+                margin: auto 0px auto 0px;
+                text-align: right;
+                font-size: $size-p-Nosotros;
+                @include animacionDesenfoque;
+
+                // Mobile Style
+                @media only screen and (max-width: 400px) {
+                    font-size: $size-p-Nosotros-Mobile;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+}
+
+#secServicios {
+    img {
+        width: $size-IMG-Serv;
+        // Mobile Style
+        @media only screen and (max-width: 400px) {
+            width: $size-IMG-Serv-Mobile;
+        }
+    }
+}
+
+#secContracto {
+    background-color: $colorFondoContacto;
+}
+
+
+
+.col-6 {
+    text-align: center;
+}
+
+.botonesFormulario {
+    text-align: center;
+}
+
+
+.clearB {
+    clear: both;
+}
